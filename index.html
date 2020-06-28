@@ -1,12 +1,7 @@
 <!DOCTYPE HTML>
-<!--
-	Overflow by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>CSNAvery | Software Engineer</title>
+		<title>Cassidy Avery | Software Engineer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -17,93 +12,96 @@
 
 		<!-- Header -->
 			<section id="header">
-				<header>
-					<h1>Cassidy SN Avery</h1>
-					<p>Software Engineer</p>
+				<header id="mainHeader">
+					<h1>Cassidy Avery</h1>
+					<h3>Software Engineer</h3>
 				</header>
-				<!-- <footer>
-					<a href="#banner" class="button style2 scrolly-middle">Scroll down arrow here</a>
-				</footer> -->
+				<footer>
+					<a href="#banner" class="button scrolly-middle"><img id="firstBtn" class="darkButton" src="images/doubledown.png" alt="downward arrow" /></a>
+				</footer>
 			</section>
 
 		<!-- Banner -->
 			<section id="banner">
-				<header>
-					<h2>Meet Cassidy</h2>
+				<header id="bannerHeader">
+					<div id="bannerHeaderText">
+						<h2 id="bhtLeft">Meet</h2>
+						<h2 id="bhtRight">Cassidy</h2>
+					</div>
+					<img src="images/cassidy.jpg" alt="black and white headshot of Cassidy smiling" />
 				</header>
-				<img src="images/cassidy.jpg" alt="" />
-				<p><span>Education</span></p>
-				<p>Lambda Academy of Computer Science</p>
-				<br>
-				<p><span>Code Skills Include</span></p>
-				<p>JavaScript, HTML, CSS, Python, React, React Native, Redux, AngularJS, Git/GitHub, Bootstrap, MongoDB, SQL, Express, Node, Django, Algorithms, Data Structures.</p>
-				<br>
-				<p><span>Other Skills Include</span></p>
-				<p>Documentation & Training, Mentoring, Written & Oral Communications, Project Management, Analysis, Critical Thinking, Problem Solving.</p>
-				<br><br>
-				<span><p>I'm just waiting for the day when someone will pay me to play video games and eat burritos.</p>
-					<p>In the meantime, I am a software engineer specializing in the JavaScript MERN stack.</p>
-					<p>I love analyzing problems and crafting creative solutions. Let's build something beautiful together.</p></span>
-				<!-- <footer>
-					<a href="#first" class="button style2 scrolly">Scroll down arrow here</a>
-				</footer> -->
+				<div id="bannerContent">
+					<div class="bannerSubTitle">Education</div>
+					<p>Lambda Academy of Computer Science</p>
+					<div class="bannerSubTitle">Code Skills Include</div>
+					<p>JavaScript, HTML, CSS, Python, React, React Native, Redux, AngularJS, Git/GitHub, Bootstrap, MongoDB, SQL, Express, Node, Django, Algorithms, Data Structures.</p>
+					<div class="bannerSubTitle">Other Skills Include</div>
+					<p>Documentation & Training, Mentoring, Written & Oral Communications, Project Management, Analysis, Critical Thinking, Problem Solving.</p>
+					<div id="bannerChatter"><p>I'm just waiting for the day when someone will pay me to play video games and eat burritos.</p>
+						<p>In the meantime, I am a software engineer specializing in the JavaScript MERN stack.</p>
+						<p>I love analyzing problems and crafting creative solutions. Let's build something beautiful together.</p></div>
+				</div>
+				<footer>
+					<a href="#featuresHeader" class="button scrolly"><img src="images/doubledown.png" alt="downward arrow" /></a>
+				</footer>
 			</section>
 
 		<!-- Feature 1 -->
-			<article id="first" class="container box style1 right">
-				<a href="https://www.bangarangbingo.com/" class="image fit" target="_blank"><img src="images/bangarang.png" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>Bangarang Bingo</h2>
-					</header>
-					<p>JavaScript MERN stack application</p>
-				</div>
-			</article>
+		    <div id="features">
+				<header id="featuresHeader">
+					<h2>Projects</h2>
+				</header>
 
-		<!-- Feature 2 -->
-			<article class="container box style1 left">
-				<a href="https://murmuring-ravine-52790.herokuapp.com/" class="image fit" target="_blank"><img src="images/randnumfact.png" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>Random Number<br />
-						Factories</h2>
-					</header>
-					<p>JavaScript MERN stack application</p>
-				</div>
-			</article>
-		
-		<!-- Feature 3 -->
-			<article id="first" class="container box style1 right">
-				<a href="https://dreamy-bose-3daeb7.netlify.com/" class="image fit" target="_blank"><img src="images/todo.png" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>To Do App</h2>
-					</header>
-					<p>AngularJS Application</p>
-				</div>
-			</article>
+				<article class="containerRight">
+					<a href="https://www.bangarangbingo.com/" class="image fit" target="_blank"><img class="featureImg" src="images/bangarang.png" alt="screenshot of login page of site" /></a>
+					<div class="inner">
+						<header>
+							<h2>Bangarang Bingo</h2>
+						</header>
+						<p>JavaScript MERN stack application</p>
+					</div>
+				</article>
+
+			<!-- Feature 2 -->
+				<article class="containerLeft">
+					<a href="https://murmuring-ravine-52790.herokuapp.com/" class="image fit" target="_blank"><img class="featureImg" src="images/randnumfact.png" alt="screenshot of login page of site" /></a>
+					<div class="inner">
+						<header>
+							<h2>Random Number<br />
+							Factories</h2>
+						</header>
+						<p>JavaScript MERN stack application</p>
+					</div>
+				</article>
+
+			<!-- Feature 3 -->
+				<article class="containerRight">
+					<a href="https://dreamy-bose-3daeb7.netlify.com/" class="image fit" target="_blank"><img class="featureImg" src="images/todo.png" alt="screenshot of todo list" /></a>
+					<div class="inner">
+						<header>
+							<h2>To Do App</h2>
+						</header>
+						<p>AngularJS Application</p>
+					</div>
+				</article>
+
+				<footer>
+					<a href="#footer" class="button scrolly-middle"><img class="darkButton" src="images/doubledown.png" alt="downward arrow" /></a>
+				</footer>
+			</div>
 
 		<section id="footer">
+			<h2>Connect With Cassidy</h2>
 			<ul class="icons">
-				<li><a href="https://github.com/tacolim" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-				<li><a href="https://twitter.com/tacolimCass" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-				<li><a href="https://www.linkedin.com/in/cassidysnavery/" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/tacolim" class="icon fa-github" target="_blank" alt="Github"></a></li>
+				<li><a href="https://twitter.com/tacolimCass" class="icon fa-twitter" target="_blank" alt="Twitter"></a></li>
+				<li><a href="https://www.linkedin.com/in/cassidysnavery/" class="icon fa-linkedin" target="_blank" alt="LinkedIn"></a></li>
 			</ul>
 			<div class="copyright">
-				<ul class="menu">
-					<li>&copy; CSNAvery. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
+				<p>&copy; CSNAvery. All rights reserved.</p>
 			</div>
 		</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
 	</body>
+
 </html>
