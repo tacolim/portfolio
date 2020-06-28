@@ -51,7 +51,7 @@ h2 {
     height: 70vh;
     display: flex;
     flex-direction: column;
-    justify content: center;
+    justify-content: center;
     align-items: center;
     padding-top: 35vh;
 }
@@ -95,10 +95,10 @@ h2 {
 }
 
 
-/*BANNER*/
+/*about*/
 
-#banner {
-background: url(../../images/banner3_abstract-art-artistic-background-325649.jpg) no-repeat center center fixed;
+#about {
+    background: url(../../images/banner3_abstract-art-artistic-background-325649.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -110,7 +110,7 @@ background: url(../../images/banner3_abstract-art-artistic-background-325649.jpg
     align-items: center;
 }
 
-#bannerHeader {
+#aboutHeader {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -123,7 +123,7 @@ background: url(../../images/banner3_abstract-art-artistic-background-325649.jpg
     border-radius: 0px 70px;
 }
 
-#bannerHeaderText {
+#aboutHeaderText {
     display: flex;
     flex-direction: column;
     width: 18vh;
@@ -136,14 +136,14 @@ background: url(../../images/banner3_abstract-art-artistic-background-325649.jpg
     border-top: 1px double teal;
 }
 
-#bannerHeader img {
+#aboutHeader img {
     border-radius: 8vh;
     height: 16vh;
     width: 16vh;
     margin-left: 0.2vh;
 }
 
-#bannerContent {
+#aboutContent {
     background: rgba(139, 213, 218, .9);
     box-shadow: rgba(0,0,0,0.2) 0px 2px 3px, inset rgba(0,0,0,0.2) 0px -1px 2px;
     border-radius: 20px;
@@ -153,13 +153,13 @@ background: url(../../images/banner3_abstract-art-artistic-background-325649.jpg
     font-size: 2vh;
 }
 
-.bannerSubTitle {
+.aboutSubTitle {
     margin-top: 2vh;
     font-family: 'Philosopher', sans-serif;
     font-size: 2.5vh;
 }
 
-#bannerChatter {
+#aboutChatter {
     margin-top: 1vh;
     font-family: 'Philosopher', sans-serif;
     text-align: right;
@@ -167,11 +167,11 @@ background: url(../../images/banner3_abstract-art-artistic-background-325649.jpg
     border-top: 1px double teal;
 }
 
-#bannerChatter p{
+#aboutChatter p{
     margin: 1vh 0vh 0vh 0vh;
 }
 
-#banner a img {
+#about a img {
     border: 1px solid #fff;
     border-radius: 2vh;
     height: 3vh;
@@ -180,16 +180,16 @@ background: url(../../images/banner3_abstract-art-artistic-background-325649.jpg
     background: rgba(82, 193, 200, .9);
 }
 
-/*FEATURES*/
-#features {
+/*projectS*/
+#projects {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify content: center;
+    justify-content: center;
     align-items: center;
 }
 
-#featuresHeader {
+#projectsHeader {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -206,12 +206,12 @@ background: url(../../images/banner3_abstract-art-artistic-background-325649.jpg
     font-size: 3.5vh;
 }
 
-.featureImg {
+.projectImg {
     width: 30vh;
     height: 100%;
 }
 
-#features article{
+#projects article{
     margin-top: 2vh;
 }
 
@@ -222,7 +222,7 @@ background: url(../../images/banner3_abstract-art-artistic-background-325649.jpg
     min-height: 20vh;
 }
 
-#features a {
+#projects a {
     border: 2px double teal;
 }
 
@@ -245,7 +245,7 @@ background: url(../../images/banner3_abstract-art-artistic-background-325649.jpg
     border: 2px double teal;
 }
 
-#features footer a {
+#projects footer a {
     border: none;
 }
 
