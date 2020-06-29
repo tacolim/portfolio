@@ -98,12 +98,11 @@ h2 {
 /*about*/
 
 #about {
-    background: url(../../images/banner3_abstract-art-artistic-background-325649.jpg) no-repeat center center fixed;
+    background: teal url('../../images/banner3_abstract-art-artistic-background-325649.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
     height: 120vh;
     display: flex;
     flex-direction: column;
