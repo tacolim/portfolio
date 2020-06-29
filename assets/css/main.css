@@ -103,6 +103,7 @@ h2 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 120vh;
     display: flex;
     flex-direction: column;
