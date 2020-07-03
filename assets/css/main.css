@@ -223,7 +223,7 @@ h2 {
 }
 
 #projects a {
-    border: 2px double teal;
+    border: 5px solid teal;
 }
 
 .containerLeft{
@@ -242,7 +242,7 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 2px double teal;
+    border: 5px solid teal;
 }
 
 #projects footer a {
