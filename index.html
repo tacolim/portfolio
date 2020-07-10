@@ -6,7 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link href="https://fonts.googleapis.com/css?family=Philosopher:700|Raleway:500|Sansita" rel="stylesheet">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+			window.onload = function() { document.documentElement.style.opacity = '1'; }
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -112,7 +114,11 @@
 				<p>&copy; Cassidy SN Avery. All rights reserved.</p>
 			</div>
 		</section>
-
+		<script>
+		  	document.addEventListener("DOMContentLoaded", function(e) {
+				document.html.classList.remove('fade');
+			 });
+		</script>
 	</body>
 
 </html>
