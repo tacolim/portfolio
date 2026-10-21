@@ -1,12 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
-@import url("font-awesome.min.css");
+@import url("fontawesome.min.css");
+@import url("brands.min.css");
+@import url("solid.min.css");
 
 
+/* fixed backgrounds: iOS Safari ignores `background-attachment: fixed`, so each one is a
+   position:fixed pseudo-element instead. The parent's clip-path keeps it inside the section. */
 html {
-  background: url("../../images/bluepainting.jpg") no-repeat center center fixed;  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: #004d66;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: url("../../images/bluepainting.webp") no-repeat center / cover;
 }
 
 html, body, h1, h2, h3, h4, h5, h6, p, div {
@@ -23,7 +31,7 @@ a {
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -57,32 +65,8 @@ h2 {
 }
 .fade-in-image {
     animation: fadeIn 2s;
-    -webkit-animation: fadeIn 2s;
-    -moz-animation: fadeIn 2s;
-    -o-animation: fadeIn 2s;
-    -ms-animation: fadeIn 2s;
 }
 @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-
-@-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-
-@-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-
-@-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-
-@-ms-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
 }
@@ -121,6 +105,38 @@ h2 {
     text-transform: uppercase;
 }
 
+/* titles carousel: spans stack in one grid cell so the h3 sizes to the widest title.
+   5 titles x 3s = 15s cycle; each span is visible for ~1/5 of it. */
+#header h3.titleCarousel {
+    display: grid;
+    justify-items: center;
+}
+
+.titleCarousel span {
+    grid-area: 1 / 1;
+    opacity: 0;
+    animation: titleCycle 15s infinite;
+}
+
+.titleCarousel span:nth-child(2) { animation-delay: 3s; }
+.titleCarousel span:nth-child(3) { animation-delay: 6s; }
+.titleCarousel span:nth-child(4) { animation-delay: 9s; }
+.titleCarousel span:nth-child(5) { animation-delay: 12s; }
+
+@keyframes titleCycle {
+    0%   { opacity: 0; }
+    5%   { opacity: 1; }
+    15%  { opacity: 1; }
+    20%  { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* no motion: just show the first title */
+@media (prefers-reduced-motion: reduce) {
+    .titleCarousel span { animation: none; }
+    .titleCarousel span:first-child { opacity: 1; }
+}
+
 #firstBtn {
     margin-top: 30vh;
 }
@@ -129,16 +145,22 @@ h2 {
 /*about*/
 
 #about {
-    background: teal url('../../images/banner3_abstract-art-artistic-background-325649.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 120vh;
+    position: relative;
+    clip-path: inset(0);
+    background: teal;
+    min-height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#about::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: url('../../images/banner3_abstract-art-artistic-background-325649.webp') no-repeat center / cover;
 }
 
 #aboutHeader {
@@ -200,6 +222,30 @@ h2 {
 
 #aboutChatter p{
     margin: 1vh 0vh 0vh 0vh;
+}
+
+/* inline text links in the about card: global `a` strips underlines, so restore an obvious affordance */
+#aboutContent p a {
+    color: #004d66;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    border-radius: 4px;
+    padding: 0 2px;
+    transition: background-color .2s, color .2s;
+}
+
+#aboutContent p a .fa-solid {
+    font-size: .8em;
+    margin-left: .3em;
+}
+
+#aboutContent p a:hover,
+#aboutContent p a:focus-visible {
+    background-color: #004d66;
+    color: #fff;
+    text-decoration-color: transparent;
 }
 
 #about a img {
@@ -295,8 +341,6 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    text-decoration: none !important;
-    font-family: FontAwesome;
     list-style: none;
     text-align: center;
     padding-inline-start: 0;
@@ -314,10 +358,6 @@ h2 {
         margin: 0vh 4vh;
         color: #fff;
     }
-
-		.icon > .label {
-			display: none;
-		}
 
 .copyright{
     display: flex;
