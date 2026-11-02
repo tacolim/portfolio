@@ -7,7 +7,7 @@
 
 ## Git workflow
 - No issues for portfolio work. Name branches for the change (`chronicle-feed`), and PRs have no `Closes #N`.
-- `master` still only changes through a PR.
+- `main` still only changes through a PR.
 - No check command (static site). Open `index.html` locally to eyeball changes.
 
 ## Infrastructure
